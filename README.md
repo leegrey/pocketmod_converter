@@ -134,5 +134,6 @@ Credit: https://blog.csdn.net/weixin_43116153/article/details/105218309
 - Allow to convert more than 8 pages.
 - Allow naming the output file.
 - Allow for multiple input files.
+- Changed layout of output pocketmod to place the fold at the top of the booklet
 
 [i1]: https://github.com/mullinscr/pocketmod-creator/issues/1
