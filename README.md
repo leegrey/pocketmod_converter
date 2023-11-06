@@ -1,6 +1,6 @@
 # PocketMod Converter
 
-Python script to convert a PDF into a PocketMod formated PDF.  
+Python script to convert a PDF into a PocketMod formatted PDF.  
 This is a modification of: https://github.com/josephhuang08/pocketmod_converter  
 Which was a modification of: https://github.com/mullinscr/pocketmod-creator  
 Changes will be listed below in the modification section.
