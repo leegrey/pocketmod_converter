@@ -1,8 +1,11 @@
 # PocketMod Converter
 
 Python script to convert a PDF into a PocketMod formated PDF.  
-This is a modification of: https://github.com/mullinscr/pocketmod-creator  
-Changes will be lised below in the modification section.
+This is a modification of: https://github.com/josephhuang08/pocketmod_converter  
+Which was a modification of: https://github.com/mullinscr/pocketmod-creator  
+Changes will be listed below in the modification section.
+
+NOTE: This version alters the layout of the output pages, to put the fold on the top of the booklet pages rather than on the bottom. I think this provides a better handling experience.
 
 ![usage example](media/explainer.png)
 
@@ -27,6 +30,14 @@ PyPDF2 can be installed via pip with:
 ```bash
 $ pip install PyPDF2
 ```
+
+If you get a deprecated PyDF version error, you can address it like so:
+
+https://stackoverflow.com/questions/74939758/camelot-deprecationerror-pdffilereader-is-deprecated
+```bash
+$ pip install 'PyPDF2<3.0'
+```
+(TODO: update to PyPDF 3)
 
 If you get an ImportError for PyDF2 when running the code make sure that you have installed PyPDF2 into the correct version of Python (if you have multiple versions installed on your machine) and that you are executing the correct version of Python.
 See issue [#1][i1].

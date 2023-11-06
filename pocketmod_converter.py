@@ -134,15 +134,28 @@ def pocket_modder(input_file, width, height, orientation):
 				5 : (x_translation * 3 , y_translation, 270),
 				6 : (x_translation * 2 , y_translation, 270),
 				7 : (x_translation , y_translation, 270)},
-			'Portrait' : {
-				0 : (x_translation, y_translation, 180),
-				1 : (0 , y_translation, 0),
-				2 : (x_translation, y_translation, 0),
-				3 : ((x_translation * 2), y_translation, 0),
-				4 : ((x_translation * 3), y_translation, 0),
-				5 : (x_translation * 4, y_translation, 180),
-				6 : (x_translation * 3, y_translation, 180),
-				7 : (x_translation * 2, y_translation, 180)}
+			
+				# the original "fold-at-the-bottom" version
+				# 'Portrait' : {
+				# 	0 : (x_translation, y_translation, 180),
+				# 	1 : (0 , y_translation, 0),
+				# 	2 : (x_translation, y_translation, 0),
+				# 	3 : ((x_translation * 2), y_translation, 0),
+				# 	4 : ((x_translation * 3), y_translation, 0),
+				# 	5 : (x_translation * 4, y_translation, 180),
+				# 	6 : (x_translation * 3, y_translation, 180),
+				# 	7 : (x_translation * 2, y_translation, 180)}
+					
+				# transformations for putting the fold at the top of the page...
+				'Portrait' : {
+					0 : (x_translation * 1, 0, 0),
+					1 : (x_translation * 2, 0, 0), 
+					2 : (x_translation * 3, 0, 0), 
+					3 : (x_translation * 4, y_translation * 2, 180),
+					4 : (x_translation * 3, y_translation * 2, 180),
+					5 : (x_translation * 2, y_translation * 2, 180),
+					6 : (x_translation * 1 , y_translation * 2, 180),
+					7 : (0, 0, 0)}
 			}
 
 		new_pdf = []
